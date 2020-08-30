@@ -1,0 +1,281 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(./img//fondo.jpg) no-repeat center center/cover;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.cabeza {
+  background: #CEECF5;
+  display: flex;
+  padding: 35px;
+}
+
+.cabeza img{
+  width: 100px;
+}
+
+.cabeza h1 {
+  color: #FF8000;
+}
+
+.namep{
+  padding: 0 10px;
+}
+
+a {
+  color: #FF8000;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav-bar {
+  background: #CEECF5;
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.contenedor-nav{
+  margin: auto;
+  border: 5px solid #FF8000;
+}
+
+.nav-bar ul{
+  display: flex;
+}
+
+.nav-bar ul li{
+  padding: 5px 30px;
+}
+
+.nav-bar ul li a:hover{
+  border-bottom: 2px solid #FF8000
+}
+
+.menu-btn {
+  position: absolute;
+  cursor: pointer;
+  top: 15px;
+  right: 30px;
+  display: none;
+}
+
+.contenedor-page {
+  width: 90%;
+  margin: auto;
+}
+
+.principal-avion{
+  width: 100%;
+  height: 550px;
+  background: url(./img//imagen\ principal.jpg) no-repeat center center/cover;
+  padding: 50px;
+  margin-bottom: 40px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.aviongrande {
+  display: contents;
+  align-items: center;
+  justify-content: center;
+}
+
+.aviongrande h2{
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px;
+}
+
+.aviongrande p{
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: #CEECF5;
+  color: #FF8000;
+  font-size: 15px;
+  border: 1px solid #000000;
+  padding: 5px;
+  align-self: center;
+  justify-self: center;
+}
+
+.barra{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  margin: 10px 0;
+  font-weight: bold;
+  background: #CEECF5;
+  padding: 15px;
+}
+
+.barra img{
+  width: 100%;
+  height: 180px;
+}
+
+.barra h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #FF8000;
+}
+
+.barra p {
+  color: #FF8000;
+}
+
+.barra a {
+  padding: 10px 0;
+  color: #FF8000;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.barra a:hover {
+  text-decoration: underline;
+}
+
+.banner-1 {
+  width: 100%;
+  height: 350px;
+  background: url(./img/imagensecundaria.jpg) no-repeat center center/cover;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.banner-1 .conten {
+  width: 40%;
+  padding: 90px 0 0 30px;
+  color: #FF8000;
+  border-top: 5px;
+}
+
+.banner-1 p,
+.banner-1 h2 {
+  color: #ffffff;
+  margin: 10px 0 20px 0;
+}
+
+.banner-2 {
+  width: 100%;
+  height: 350px;
+  background: url(./img/imagenterciaria.jpg) no-repeat center center/cover;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.banner-2 .conten-1 {
+  width: 40%;
+  padding: 90px 0 0 30px;
+  color: #FF8000;
+}
+
+.banner-2 p,
+.banner-2 h2 {
+  color: #ffffff;
+  margin: 10px 0 20px 0;
+}
+
+.social {
+  margin: 50px;
+}
+
+.social {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #FF8000;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link a {
+  margin: 0 30px;
+}
+
+.pie-pagina {
+  background: #2f3640;
+  color: #616161;
+  font-size: 12px;
+  padding: 35px 0;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+
+  .contenedor-nav {
+    border: 5px solid #CEECF5;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-bar ul.element-nav {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #CEECF5;
+    height: 100%;
+    padding: 30px;
+    opacity: .9;
+    transform: translateX(-400px);
+    transition: transform .5s ease-in-out;
+  }
+
+  .nav-bar ul.element-nav.show {
+    transform: translateX(-20px);
+  }
+
+  .barra {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+
+  .contenedor-nav {
+    border: 5px solid #CEECF5;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .barra {
+    grid-template-columns: 1fr;
+  }
+
+  .barra img {
+    height: 270px;
+  }
+}
